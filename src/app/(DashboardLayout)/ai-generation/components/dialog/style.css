@@ -1,0 +1,11 @@
+.mySwiper .swiper-slide {
+  height: 92px !important;
+  /* giữ nguyên height của nội dung */
+  margin-bottom: 10px;
+  /* spacing 10px giữa slide */
+}
+
+.mySwiper .swiper-slide:last-child {
+  margin-bottom: 0;
+  /* bỏ margin cho item cuối */
+}

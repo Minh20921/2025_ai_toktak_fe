@@ -1,0 +1,28 @@
+.loop-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+.loop-track {
+    display: inline-flex;
+    white-space: nowrap;
+    will-change: transform;
+}
+
+.loop-text {
+    white-space: pre;
+    margin-right: 80px;
+    font-size: 16px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

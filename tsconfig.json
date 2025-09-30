@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@service/*": [
+        "./service/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".stagingnext/types/**/*.ts",
+    ".stagingvietnam/types/**/*.ts",
+    ".stagingvietnam1/types/**/*.ts",
+    ".stagingvietnam2/types/**/*.ts",
+    ".stagingvietnam3/types/**/*.ts",
+    ".stagingvietnam4/types/**/*.ts",
+    ".stagingvietnam5/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

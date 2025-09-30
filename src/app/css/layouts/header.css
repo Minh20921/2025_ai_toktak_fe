@@ -1,0 +1,29 @@
+.page-wrapper {
+  margin-left: 240px;
+  transition: margin-left 0.2s ease-in;
+}
+
+.body-wrapper {
+  width: calc(100vw - 240px);
+  transition: width 0.2s ease-in;
+}
+
+/* SM breakpoint: Sidebar width 200px */
+@media screen and (max-width: 767px) {
+  .page-wrapper {
+    margin-left: 200px;
+  }
+  .body-wrapper {
+    width: calc(100vw - 200px);
+  }
+}
+
+/* XS breakpoint: no Sidebar in layout */
+@media screen and (max-width: 639px) {
+  .page-wrapper {
+    margin-left: 0;
+  }
+  .body-wrapper {
+    width: 100vw;
+  }
+}

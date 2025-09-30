@@ -1,0 +1,185 @@
+.blog-content {
+  padding: 0 100px;
+}
+
+.blog-content h1 {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.blog-content h2 {
+  margin-bottom: 15px;
+  color: #A4A4A4;
+}
+
+
+.blog-content img {
+  margin: 35px auto;
+}
+
+.blog-content p {
+  margin-top: 5px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 599px) {
+  .blog-content {
+    padding: 0;
+  }
+}
+
+.video-animation {
+  animation-name: myMove;
+  animation-duration: 1s;
+}
+
+@keyframes myMove {
+  from {
+    bottom: -200px;
+  }
+
+  to {
+    bottom: 0;
+  }
+}
+
+.upload-all-btn {
+  width: 366px;
+  height: 55px;
+  background-size: 300% 100% !important;
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.upload-all-btn {
+  width: 366px;
+  height: 55px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-image: linear-gradient(91.47deg, #4776ef 7.33%, #3265ea 95.87%);
+  background-size: 300% 100%;
+  border-radius: 28px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.upload-all-btn:hover,
+.upload-all-btn-init {
+  background-position: 200% 0;
+}
+
+.swal2-html-container {
+  font-size: 14px;
+  color: #a4a4a4;
+  /* margin-top: -55px; */
+}
+
+.zoom-in-out-element {
+  animation: zoom-in-zoom-out 1s ease infinite;
+  /* animation-delay: 2s; */
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    scale: 120%;
+  }
+
+  50% {
+    scale: 100%;
+  }
+
+  100% {
+    scale: 120%;
+  }
+}
+
+.zoom-out-element {
+  transform: scale(1.5);
+  transition: 1s;
+  transform-origin: center center;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+
+  to {
+    top: 140px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+
+  to {
+    top: 140px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    top: 140px;
+    opacity: 1;
+  }
+
+  to {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    top: 140px;
+    opacity: 1;
+  }
+
+  to {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
+#article,
+.mce-tinymce,
+.mce-stack-layout,
+.mce-edit-area {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.mce-tinymce iframe {
+  flex: 1;
+}
+
+.mce-content-body {
+  margin: 0 !important;
+}
+
+.tox-editor-header,
+.tox-statusbar {
+  display: none !important;
+}
+
+.tox-tinymce {
+  border: none !important;
+}
+
+.tox-edit-area::before {
+  border: none !important;
+}
